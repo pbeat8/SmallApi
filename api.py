@@ -12,17 +12,17 @@ MAXDATE = '2016-12-29'
 CURRENCIES = ["USD", "PLN"]
 DATA_TYPES = ["Rates", "Sales"]
 SALES_LAST_CACHED = datetime.now()
+SALES = []
 
 app = flask.Flask(__name__)
 
 limiter = Limiter(
     app,
     key_func=get_remote_address,
-    default_limits=["300 per day", "20 per minute"],
-    application_limits=["10000 per day", "300 per minute", "10 per second"]
+    default_limits=["300 per day", "40 per minute"],
+    application_limits=["10000 per day", "3000 per minute", "10 per second"]
 )
 app.config["DEBUG"] = True
-SALES = []
 
 
 @app.route('/', methods=['GET'])
