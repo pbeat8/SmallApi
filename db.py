@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
 
-DATABASE = r"C:\Users\Patrycja\Desktop\5 semestr\Języki skryptowe\salesData.db"
+DATABASE = r"C:\Users\Patrycja\Documents\Git\SmallApi\salesData.db"
 MINDATE = '2013-01-04'
 MAXDATE = '2016-12-29'
 
