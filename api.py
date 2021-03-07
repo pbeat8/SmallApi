@@ -22,7 +22,6 @@ limiter = Limiter(
     default_limits=["300 per day", "40 per minute"],
     application_limits=["10000 per day", "3000 per minute", "10 per second"]
 )
-app.config["DEBUG"] = True
 
 
 @app.route('/', methods=['GET'])
