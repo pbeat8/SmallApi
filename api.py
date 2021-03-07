@@ -246,4 +246,4 @@ def get_sales_chart_data(result_data, currency, start_date, end_date):
     return dates, values
 
 
-app.run()
+# app.run()
