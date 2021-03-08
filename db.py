@@ -2,8 +2,9 @@ import sqlite3
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
+import nbp
 
-DATABASE = r"C:\Users\Patrycja\Documents\Git\SmallApi\salesData.db"
+DATABASE = r".\salesData.db"
 MINDATE = '2013-01-04'
 MAXDATE = '2016-12-29'
 
