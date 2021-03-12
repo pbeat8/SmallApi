@@ -1,10 +1,13 @@
 import sqlite3
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
+import os.path
 
 import nbp
 
-DATABASE = r".\salesData.db"
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATABASE = os.path.join(BASE_DIR, "salesData.db")
 MINDATE = '2013-01-04'
 MAXDATE = '2016-12-29'
 
