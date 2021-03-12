@@ -2,4 +2,3 @@ matplotlib
 flask
 flask_limiter
 gunicorn
-sqlite3
