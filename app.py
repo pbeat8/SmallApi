@@ -45,13 +45,13 @@ def return_data():
     end_date = args['endDate']
     missing_data, result_data = process_data(data_type, currency, start_date, end_date)
     if data_type == 'Rates':
-        if len(end_date) != 0 and not missing_data:
+        if end_date and not missing_data:
             chart_data = get_rates_chart_data(result_data)
             return render_template("rates-page.html", missing_data=missing_data, currency=currency, data=result_data,
                                    chart_data=chart_data)
         return render_template("rates-page.html", missing_data=missing_data, currency=currency, data=result_data)
     else:
-        if len(end_date) != 0 and not missing_data:
+        if end_date and not missing_data:
             chart_data = get_sales_chart_data(result_data, currency, start_date, end_date)
             return render_template("sales-page.html", missing_data=missing_data, currency=currency, data=result_data,
                                    chart_data=chart_data)
@@ -183,7 +183,7 @@ def api_sales_timespan(startdate, enddate):
 def process_data(data_type, currency, start_date, end_date):
     missing_data = False
     if data_type == 'Rates':
-        if len(end_date) == 0:
+        if not end_date:
             if currency == 'USD':
                 temp_result = api_rates_usd_date(start_date)
             else:
@@ -199,7 +199,7 @@ def process_data(data_type, currency, start_date, end_date):
         else:
             result_data = json.loads(temp_result)
     else:
-        if len(end_date) == 0:
+        if not end_date:
             temp_result = api_sales(start_date)
         else:
             temp_result = api_sales_timespan(start_date, end_date)
