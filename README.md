@@ -42,11 +42,11 @@ and PLN and currency rate from given time span. If no sales occurred in given ti
  'ERROR: No data found. Sales on given days totalled 0' is returned.  
  
 Request examples:
- - `http://127.0.0.1:5000/api/rates/USD/2014-03-01` returns USD exchange rate from 
+ - `https://pbeat8-smallapi.herokuapp.com/api/rates/USD/2014-03-01` returns USD exchange rate from 
 1st March 2014.
-- `http://127.0.0.1:5000/api/rates/PLN/2014-03-01/2014-03-30` returns PLN exchange rates from 1st March 2014
+- `https://pbeat8-smallapi.herokuapp.com/api/rates/PLN/2014-03-01/2014-03-30` returns PLN exchange rates from 1st March 2014
 to 30th March 2014.
-- `http://127.0.0.1:5000/api/sales/2015-10-01` returns sales from 1st October 2015 in USD and PLN and currency 
+- `https://pbeat8-smallapi.herokuapp.com/api/sales/2015-10-01` returns sales from 1st October 2015 in USD and PLN and currency 
 rate from that day.
-- `http://127.0.0.1:5000/api/sales/2015-10-01/2015-11-01` returns nonzero sales from 1st October 2015 to 
+- `https://pbeat8-smallapi.herokuapp.com/api/sales/2015-10-01/2015-11-01` returns nonzero sales from 1st October 2015 to 
 1st November 2015 in USD and PLN and currency rate from given time span.
