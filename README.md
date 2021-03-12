@@ -1,4 +1,4 @@
-# Lab 5 My first API
+# My Small API
 This is an API for getting historical currency ratings from 
 NBP API completed with data for missing ratings. You can also 
 access total sales data from provided database using this api.  
