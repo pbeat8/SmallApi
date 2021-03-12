@@ -48,5 +48,5 @@ Request examples:
 to 30th March 2014.
 - `https://pbeat8-smallapi.herokuapp.com/api/sales/2015-10-01` returns sales from 1st October 2015 in USD and PLN and currency 
 rate from that day.
-- `https://pbeat8-smallapi.herokuapp.com/api/sales/2015-10-01/2015-11-01` returns nonzero sales from 1st October 2015 to 
+- `https://pbeat8-smallapi.herokuapp.com/cdapi/sales/2015-10-01/2015-11-01` returns nonzero sales from 1st October 2015 to 
 1st November 2015 in USD and PLN and currency rate from given time span.
