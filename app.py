@@ -6,7 +6,6 @@ from datetime import datetime, timedelta
 
 import db
 
-DATABASE = r"C:\Users\Patrycja\Desktop\5 semestr\Języki skryptowe\salesData.db"
 MINDATE = '2013-01-04'
 MAXDATE = '2016-12-29'
 CURRENCIES = ["USD", "PLN"]
